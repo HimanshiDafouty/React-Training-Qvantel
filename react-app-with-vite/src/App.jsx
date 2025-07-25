@@ -9,7 +9,8 @@ import FormHandlingWithValidations from "./Components/FormHandlingWithValidation
 import UniversityFormHandlingWithValidations from "./Components/UniversityFormHandlingWithValidations";
 import NoMatch from "./Routing/NoMatch";
 import Home from "./Components/Home";
-// import UseFetchCustomHook from './Components/UseFetchCustomHook';
+import ProfileRouting from "./Routing/ProfileRouting";
+import UseFetchCustomHook from './Components/UseFetchCustomHook';
 // import Counter from './Components/counter';
 // import HookUseEffect from './Components/HookUseEffect';
 // // import UseContextChildComponent from './Components/useContextChildComponent';
@@ -62,6 +63,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path ="/profileRouting" element={<ProfileRouting/>}>
+          </Route>
+          <Route path ="/useFetchCustomHook" element={
+            <UseFetchCustomHook/>
+          }></Route>
+          
 
           <Route path="/formHandling" element={<FormHandling />} />
           <Route
@@ -74,7 +81,13 @@ function App() {
         <Link to="/formHandling">FormHandling</Link>
         <br />
         <Link to="/universityForm">University Form Validations</Link>
+        <br />
+        <Link to="/profileRouting">Profile Routing</Link>
+        <br />
+        <Link to = "/useFetchCustomHook">Custom Hook </Link>
+
       </BrowserRouter>
+
     </>
   );
 }
