@@ -1,0 +1,53 @@
+.todo-container {
+  text-align: center;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 200px;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.task-item {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item span {
+  cursor: pointer;
+}
+
+.task-item .completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}

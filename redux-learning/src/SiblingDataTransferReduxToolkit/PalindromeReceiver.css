@@ -1,0 +1,30 @@
+.receiver-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  color: #0f172a; /* slate-900 */
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.result {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.result.palindrome {
+  color: #16a34a; /* green-600 */
+}
+
+.result.not-palindrome {
+  color: #dc2626; /* red-600 */
+}
